@@ -10,12 +10,29 @@
 </head>
 
 <body>
-    <h2>{{>header}}</h2>
-    <div class="content">
-        <h3>{{desc}}</h3>
-    </div>
 
-    <footer>This is {{title}} footer padg</footer>
+    <section>
+        <div class="title">
+            <h2>{{title}}</h2>
+            <p>{{desc}}</p>
+        </div>
+        <div class="content">
+            <form id="form1">
+                <input type="text" id="input1" placeholder=" Enter Country Name ">
+                <button>Search For Weather</button>
+            </form>
+            <div class="result">
+                <p id="location"></p>
+                <p id="forecast"></p>
+                <p id="error"></p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
